@@ -1,5 +1,62 @@
 /* CSS Mínimo para o Sistema de Controle de Estoque */
 
+/* Estilo geral */
+body {
+    background: #f8f9fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background: #00796b;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Menu de navegação */
+nav a {
+    color: #fff;
+    background: #009688;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #004d40;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #00796b;
+    margin-top: 20px;
+}
+
+/* Formulários */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Rótulos dos campos */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
 /* Garante que o rótulo ocupe uma linha, empurrando o campo para a linha de baixo */
 label {
     display: block;
@@ -12,6 +69,93 @@ label {
     font-weight: bold;
 }
 
+/* Campo dos formulários */
+input[type="text"], input[type="number"], input[type="password"], input[type="date"], textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #b2dfdb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #f1f8e9;
+}
+
+/* Botões */
+button {
+    background: #00796b;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #004d40;
+}
+
+/* Alerta em caso de erro */
+.alert, .erro, .alerta-estoque {
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alert { background: #e0f7fa; color: #00796b; }
+.erro { background: #ffcdd2; color: #c62828; }
+.alerta-estoque { background: #fff3e0; color: #ef6c00; }
+
+/* Mensagem de informação */
+.info-msg {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 6px;
+    border-radius: 4px;
+    margin-top: 8px;
+    font-size: 0.95em;
+}
+
+/* Tabelas */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #b2dfdb;
+    text-align: left;
+}
+
+th {
+    background: #b2dfdb;
+    color: #004d40;
+}
+
+tr.estoque-baixo {
+    background: #ffebee;
+    color: #c62828;
+    font-weight: bold;
+}
+
+/* Links */
 a {
     margin: 5px;
+    color: #00796b;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+/* Link muda ao passar o mouse */
+a:hover {
+    color: #c62828;
 }
