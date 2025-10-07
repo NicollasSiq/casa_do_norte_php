@@ -1,0 +1,17 @@
+/* CSS Mínimo para o Sistema de Controle de Estoque */
+
+/* Garante que o rótulo ocupe uma linha, empurrando o campo para a linha de baixo */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Destaca em vermelho os itens com estoque baixo */
+.estoque-baixo {
+    color: red;
+    font-weight: bold;
+}
+
+a {
+    margin: 5px;
+}
